@@ -1,0 +1,272 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+      .nav-section{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+      }
+      .nav-section a{
+        text-decoration: none;
+        font-family: sans-serif;
+        color: black;
+        font-weight: bold;
+      }
+      .animation{
+        background-color: green;
+        color: white;
+        padding: 5px 0%;
+      }
+       .container{
+       display: flex;
+       padding-left: 10%;
+      
+       box-shadow: 0px 1px 1px black;
+        }
+        
+        .text p{
+          color: blue;
+          margin-left: 30px;
+        }
+        
+        .text button{
+          color: white;
+          background-color: green;
+          border-radius: 25px;
+          margin-left: 30px;
+        }
+         
+        .supplier{
+          margin-left: 30px;
+        }
+        
+        h3{
+         
+          text-align: center;
+          text-decoration: underline;
+        } 
+        .container1{
+          display: flex; 
+          margin-top: 2%;
+          box-shadow: 0px 1px 1px black;
+        }
+        .container1 img{
+          right: 10px;
+          position: absolute;
+          padding-right: 5%;
+          padding-top: -14px;
+          
+        }
+        .text1 button{
+          color:white;
+          background-color: green;
+          border-radius: 25px;
+        }
+        .text1{
+          margin-left: 10%;
+        }
+        .parent{
+          padding: 0% 5% 0% 5%;
+
+          display: grid;
+          grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+          text-align: center;
+        }
+        .child1{
+          box-shadow: 0px 0px 1px grey;
+          margin-right: 2%;
+        }
+        .child2{
+          box-shadow: 0px 0px 1px grey;
+        }
+        .child3{
+          box-shadow: 0px 0px 1px grey;
+          margin-left: 2%;
+        }
+        .Hyderabad{
+          width: 100%;
+          height: 57%;
+        }
+        .parent2{
+          padding: 0% 5% 0% 5%;
+          display: grid;
+          grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+          text-align: center;
+          margin-top: 7px;
+        }
+        .child21{
+          box-shadow: 0px 0px 1px grey;
+          margin-right: 2%;
+          height: 80%;
+        }
+        .child22{
+          box-shadow: 0px 0px 1px grey;
+          height: 70%;
+        }
+        .child23{
+          box-shadow: 0px 0px 1px grey;
+          margin-left: 2%;
+          height: 70%;
+        }
+        .vijayawada{
+          width: 100%;
+          height: 57%;
+        }
+        .vijayawada2{
+          height: 57%;
+        }
+        .rishi{
+
+          display: grid;
+          grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+        }
+        /* .rishi1 h4{
+          color: white;
+          background-color: black; 
+          width: fit-content;
+        } */
+        .rishi h4{
+          color: white;
+          background-color: black;
+          width: fit-content;
+        }
+        .rishi1{
+        border-radius: 10px;
+        }
+
+        
+
+    </style>
+</head>
+<body> 
+    <nav class="nav-section">
+    <a href=""><img src="data:image/png;base64,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" alt="d-mart "></a>
+    <a href="https://www.dmartindia.com/">ABOUT US</a>
+    <a href="">CATEGORIES</a>
+    <a href="">SOCIAL OUTREACH</a>
+    <a href="">PARTNER WITH US</a>
+    <a href="">CAREERS</a>
+    <a href="">FEED BACK</a>
+    <span>
+    <i class="fa-brands fa-square-facebook"></i>&nbsp;
+    <i class="fa-brands fa-linkedin"></i>
+</span>
+</nav>
+
+
+<div>
+    <marquee class="animation" direction="">Dear Customers - Our offers / promotions and customer care contact details are published on our websites (www.dmartindia.com and www.dmart.in), DMart Ready App and at our Stores. Please do not call any unknown numbers or click on any unknown links or similar looking links. Please check the website name carefully. These could be potential phishing websites.       
+
+        Dear Customers - Our offers / promotions and customer care contact details are published on our websites (www.dmartindia.com and www.dmart.in), DMart Ready App and at our Stores. Please do not call any unknown numbers or click on any unknown links or similar looking links. Please check the website name carefully. These could be potential phishing websites.       </marquee>
+
+</div>
+
+<div>
+
+    <img src="https://www.dmartindia.com/static/media/home-banner.644eeaa9.jpg" alt="banner img "width=100%>
+</div>
+<h3>QUICK LINKS</h3>
+
+<div class="container">
+  
+  <div style="width:30%">
+  <img src="https://www.dmartindia.com/static/media/photo-1514792368985-f80e9d482a02.c96767e9.jpg" alt="d-mart"width=100%>
+</div>
+<div class="text">
+  <strong class="supplier">New Suppliers</strong>
+  <p>Would you like to showcase your products to us?</p>
+  <button>ONLINE APPOINTMENT</button>
+  <button>VENDOR REGISTRATION</button>
+</div>
+</div>
+<div class="container1">
+<div class="text1">
+  <strong>Landlords</strong>
+  <p>Do you have a property to rent / sell?</p>
+  <button>REGISTER AS LANDLORD</button>
+</div>
+<div style="width: 30%;"><img src="https://www.dmartindia.com/static/media/photo-1534723452862-4c874018d66d.4328707c.jpg" alt="d-mart"width=10%></div>
+</div>
+</div>
+ <h3>New Stores</h3>
+ <!-- <div class="card1">
+  <h2>Narsingi</h2>
+  <p>Hyderabad, Telangana</p>
+  <img src="https://api.dmartindia.com/corporate/content/file/v1/184/G4KswvRAXy0GovIXGG15oTf01712054209/Narsingi" width="20%">
+ </div> -->
+
+ <div class="parent">
+
+<div class="child1">
+  
+  <h5>Narsingi</h5>
+  <p>Hyderabad, Telangana</p>
+  <img class="Hyderabad" src="https://api.dmartindia.com/corporate/content/file/v1/184/G4KswvRAXy0GovIXGG15oTf01712054209/Narsingi"alt='img' />
+</div>
+
+<div class="child2">
+  <h5>Sachin - Surat</h5>
+  <p>Surat, Gujarat</p>
+  <img width="100%" src="https://api.dmartindia.com/corporate/content/file/v1/185/j0MbH5BkzYjpdP2UOM3bdU8W1712054387/Sachin - Surat" alt="sachin-surat">
+</div>
+
+<div class="child3">
+  <h5>Nirmal</h5>
+  <p>Nirmal, Telangana</p>
+  <img width=100% src="https://api.dmartindia.com/corporate/content/file/v1/186/UEns9sJSvG1BRj5WHEpYNKb41712054540/Nirmal" alt="">
+</div>
+ </div>
+
+ <div class="parent2">
+<div class="child21">
+  <h5>Banur</h5>
+  <p>Mohali, Punjab</p>
+  <img width= 100% src="https://api.dmartindia.com/corporate/content/file/v1/187/0HWVRH9qw4vdJ63CZmQ4d1bT1712054859/Banur" alt="banuhr">
+</div>
+
+<div class="child22">
+  <h5>Palm Garden</h5>
+  <p>Ludhiana, Punjab</p>
+  <img class="vijayawada2" width=100% src="https://api.dmartindia.com/corporate/content/file/v1/188/0XazIZZPuwdGGuJsqBfmVr8V1712054975/Palm Garden" alt="garden">
+</div>
+
+
+<div class="child23">
+  <h5>Ghatkopar East</h5>
+  <p>Mumbai, Maharashtra</p>
+  <img class="vijayawada" width=100% src="https://api.dmartindia.com/corporate/content/file/v1/189/Sg6LXIbjdZociG9IMID7goKe1712055561/Ghatkopar East" alt="">
+</div>
+</div>
+
+
+<div class="rishi">
+
+  <div class="rishi1">
+    <img src="https://www.dmartindia.com/static/media/GROCERY%20&%20STAPLES.88be12a7.jpg" alt="GROCERY & STAPLES">
+    <h4>GROCERY & STAPLES</h4>
+  </div>
+
+  <div class="rishi2">
+    <img src="https://www.dmartindia.com/static/media/DAILY%20ESSENTIALS.e203cb84.jpg" alt="DAILY ESSENTIALS">
+    <h4>DAILY ESSENTIALS</h4>
+  </div>
+
+  <div class="rishi3">
+    <img src="https://www.dmartindia.com/static/media/DAIRY%20&%20FROZEN.41fe6246.jpg" alt="DAIRY & FROZEN">
+    <h4>DAIRY & FROZEN</h4>
+  </div>
+
+  <div class="rishi4">
+    <img src="https://www.dmartindia.com/static/media/DMART%20BRANDS.d0b4c9ca.jpg" alt="DMART BRANDS">
+    <h4>DMART BRANDS</h4>
+  </div>
+
+</div>
+
+</body>
+</html>
